@@ -1,0 +1,9 @@
+name: Continuous Integration
+
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+      - uses: actions/chckout@v3
