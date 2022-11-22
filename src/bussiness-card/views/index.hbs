@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>App</title>
+  </head>
+  <body>
+    {{message}}
+
+    <div>
+      {{!Loop in Handlebars}}
+      {{#businesscards}}
+        <tr>
+          <td>{{title}}</td>
+          <td>{{email}}</td>
+          <td><a href='/{{_id}}'>Read entire business card</a></td>
+        </tr>
+      {{/businesscards}}
+    </div>
+
+  </body>
+</html>
