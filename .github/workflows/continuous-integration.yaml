@@ -12,4 +12,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Check linting
-        run: eslint \"{src,apps,libs,test,.github}/**/*.yaml\" --fix
+        run: eslint --fix
